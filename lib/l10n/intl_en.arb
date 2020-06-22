@@ -1,0 +1,20 @@
+{
+    "@@locale": "en",
+    "passwordHint": "Password",
+    "emailHint": "Email",
+    "home": "Home",
+    "loginButton": "Login",
+    "signUpButton": "Sign up",
+    "signUp": "Sign Up",
+    "signUpErrorTitle": "Sign up failure",
+    "signIn": "Sign In",
+    "signInErrorTitle": "Sign in failure",
+    "noResults": "No results",
+    "error": "Error",
+    "pleaseWait": "Please Wait...",
+    "ok": "Ok",
+    "userNameHint": "User Name",
+    "alreadyUser": "Already a user",
+    "newUser": "A new user?",
+    "signupSuccess": "Successfully signed up, please Sign In"
+}

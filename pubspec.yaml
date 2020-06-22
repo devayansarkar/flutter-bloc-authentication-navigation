@@ -1,0 +1,39 @@
+name: flutter_mobile_application
+description: Boiler plate Flutter code for mobile application using, BLoc architecure, navigation, internationalization and Lottie animation
+publish_to: "none"
+version: 1.0.0+1
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.3
+  shared_preferences: ^0.5.6
+  http: ^0.12.0+4
+  rxdart: ^0.23.1
+  json_annotation: ^3.0.1
+  connectivity: 0.4.8+1
+  flutter_secure_storage: 3.3.1+1
+  bloc: ^3.0.0
+  flutter_bloc: ^3.2.0
+  meta: ^1.1.8
+  equatable: ^1.0.1
+  intl_utils: ^1.5.0
+  lottie: ^0.4.0+1
+  flushbar: ^1.10.4
+  material_design_icons_flutter: ^2.7.94
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^1.0.0
+  json_serializable: ^3.2.3
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animations/lottie/welcome-animation.json
+    - assets/images/flutter_image.jpg
+flutter_intl:
+  enabled: true
+  class_name: Content
+  main_locale: en
