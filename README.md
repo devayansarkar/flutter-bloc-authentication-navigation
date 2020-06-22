@@ -101,6 +101,22 @@ flutter build apk --release lib/main_production.dart
 ### Lottie animation
 The animation in the project is downloaded from [here](https://lottiefiles.com/24574-love-pride-heart).
 
+## Screenshots
+
+### iOS
+![WELCOME](/screenshots/ios/welcome.png)
+![SIGNIN](/screenshots/ios/signin.png)
+![SIGNIN_KEYBOARD_OPEN](/screenshots/ios/signin_keyboard_open.png)
+![SIGNIN_ERR](/screenshots/ios/signin_error_notification.png)
+
+### Android
+![WELCOME](/screenshots/android/welcome.png)
+![SIGNIN](/screenshots/android/signin.png)
+![SIGNIN_KEYBOARD_OPEN](/screenshots/android/signin_keyboard_open.png)
+![SIGNIN_ERR](/screenshots/android/signin_error_notification.png)
+
+
+
 ## Project structure
 ```bash
 .
