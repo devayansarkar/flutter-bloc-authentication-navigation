@@ -97,3 +97,52 @@ flutter build apk --release lib/main_staging.dart
 flutter clean
 flutter build apk --release lib/main_production.dart
 ```
+
+### Lottie animation
+The animation in the project is downloaded from [here](https://lottiefiles.com/24574-love-pride-heart).
+
+## Project structure
+```bash
+.
+├── app
+├── common
+│   ├── base
+│   ├── bloc
+│   │   └── connectivity
+│   ├── constants
+│   ├── network
+│   ├── preference
+│   ├── routes
+│   ├── ui
+│   ├── utils
+│   └── widget
+├── feature
+│   ├── authentication
+│   │   ├── bloc
+│   │   └── repositories
+│   ├── home
+│   │   ├── bloc
+│   │   ├── models
+│   │   ├── services
+│   │   └── ui
+│   │       ├── screen
+│   │       └── widget
+│   ├── landing
+│   │   └── ui
+│   ├── signin
+│   │   ├── bloc
+│   │   ├── services
+│   │   └── ui
+│   ├── signup
+│   │   ├── bloc
+│   │   ├── services
+│   │   └── ui
+│   └── welcome
+│       └── ui
+├── generated
+│   └── intl
+├── l10n
+├── main_development.dart   # To be used for development
+├── main_production.dart    # To be used for production
+└── main_staging.dart       # To be used for staging
+```
