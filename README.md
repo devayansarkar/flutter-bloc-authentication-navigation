@@ -105,14 +105,20 @@ The animation in the project is downloaded from [here](https://lottiefiles.com/2
 ```bash
 .
 ├── app
+│   ├── app.dart                # Main app
+│   └── theme.dart              # App theme
 ├── common
 │   ├── base
 │   ├── bloc
 │   │   └── connectivity
 │   ├── constants
+│   │   ├── env.dart            # env variables
+│   │   └── themeColors.dart    # theme colors
 │   ├── network
 │   ├── preference
 │   ├── routes
+│   │   ├── route_generator.dart # routes mapping
+│   │   └── routes.dart          # application routes
 │   ├── ui
 │   ├── utils
 │   └── widget
@@ -142,7 +148,8 @@ The animation in the project is downloaded from [here](https://lottiefiles.com/2
 ├── generated
 │   └── intl
 ├── l10n
-├── main_development.dart   # To be used for development
-├── main_production.dart    # To be used for production
-└── main_staging.dart       # To be used for staging
+│   └── intl_en.arb                 # content according to language
+├── main_development.dart           # To be used for development
+├── main_production.dart            # To be used for production
+└── main_staging.dart               # To be used for staging
 ```
