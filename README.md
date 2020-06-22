@@ -104,7 +104,7 @@ The animation in the project is downloaded from [here](https://lottiefiles.com/2
 ## Screenshots
 
 ### iOS
-![WELCOME](/screenshots/ios/welcome.png | width=48)
+![WELCOME](/screenshots/ios/welcome.png)
 ![SIGNIN](/screenshots/ios/signin.png)
 ![SIGNIN_KEYBOARD_OPEN](/screenshots/ios/signin_keyboard_open.png)
 ![SIGNIN_ERR](/screenshots/ios/signin_error_notification.png)
