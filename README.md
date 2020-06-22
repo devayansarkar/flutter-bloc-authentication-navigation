@@ -122,7 +122,7 @@ The animation in the project is downloaded from [here](https://lottiefiles.com/2
 │   ├── ui
 │   ├── utils
 │   └── widget
-├── feature
+├── feature                      # UI screens for the app
 │   ├── authentication
 │   │   ├── bloc
 │   │   └── repositories
