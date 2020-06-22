@@ -1,5 +1,5 @@
 name: flutter_mobile_application
-description: Boiler plate Flutter code for mobile application using, BLoc architecure, navigation, internationalization and Lottie animation
+description: Boiler plate Flutter code for mobile application using, BLoC architecure, navigation, internationalization and Lottie animation
 publish_to: "none"
 version: 1.0.0+1
 environment:
