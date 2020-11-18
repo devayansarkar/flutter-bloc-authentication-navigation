@@ -21,22 +21,25 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
-    "alreadyUser" : MessageLookupByLibrary.simpleMessage("Already a user"),
-    "emailHint" : MessageLookupByLibrary.simpleMessage("Email"),
-    "error" : MessageLookupByLibrary.simpleMessage("Error"),
-    "home" : MessageLookupByLibrary.simpleMessage("Home"),
-    "loginButton" : MessageLookupByLibrary.simpleMessage("Login"),
-    "newUser" : MessageLookupByLibrary.simpleMessage("A new user?"),
-    "noResults" : MessageLookupByLibrary.simpleMessage("No results"),
-    "ok" : MessageLookupByLibrary.simpleMessage("Ok"),
-    "passwordHint" : MessageLookupByLibrary.simpleMessage("Password"),
-    "pleaseWait" : MessageLookupByLibrary.simpleMessage("Please Wait..."),
-    "signIn" : MessageLookupByLibrary.simpleMessage("Sign In"),
-    "signInErrorTitle" : MessageLookupByLibrary.simpleMessage("Sign in failure"),
-    "signUp" : MessageLookupByLibrary.simpleMessage("Sign Up"),
-    "signUpButton" : MessageLookupByLibrary.simpleMessage("Sign up"),
-    "signUpErrorTitle" : MessageLookupByLibrary.simpleMessage("Sign up failure"),
-    "signupSuccess" : MessageLookupByLibrary.simpleMessage("Successfully signed up, please Sign In"),
-    "userNameHint" : MessageLookupByLibrary.simpleMessage("User Name")
+    "appName" : MessageLookupByLibrary.simpleMessage("Flutter mobile application"),
+    "signInButtonName" : MessageLookupByLibrary.simpleMessage("Sign in"),
+    "signInEmailHint" : MessageLookupByLibrary.simpleMessage("Your email"),
+    "signInFailureTitle" : MessageLookupByLibrary.simpleMessage("Sign in failure"),
+    "signInIssueContactUs" : MessageLookupByLibrary.simpleMessage("If you are having issues signing in, please contact technical support team."),
+    "signInKnownFailureErrorMessage" : MessageLookupByLibrary.simpleMessage("Please check your username and password and try again."),
+    "signInPageTitle" : MessageLookupByLibrary.simpleMessage("Sign in"),
+    "signInPasswordHint" : MessageLookupByLibrary.simpleMessage("Your password"),
+    "signInUnknownFailureErrorMessage" : MessageLookupByLibrary.simpleMessage("Unable to sign in now. Please try again later."),
+    "signOutTitle" : MessageLookupByLibrary.simpleMessage("Sign out"),
+    "signUpButtonName" : MessageLookupByLibrary.simpleMessage("Sign up"),
+    "signUpEmailHint" : MessageLookupByLibrary.simpleMessage("Your email"),
+    "signUpFailureTitle" : MessageLookupByLibrary.simpleMessage("Sign up failure"),
+    "signUpHint" : MessageLookupByLibrary.simpleMessage("Do not have an account ? Sign up here."),
+    "signUpPageTitle" : MessageLookupByLibrary.simpleMessage("Sign up"),
+    "signUpPasswordHint" : MessageLookupByLibrary.simpleMessage("Password"),
+    "signUpPasswordMatch" : MessageLookupByLibrary.simpleMessage("Your passwords do not match. Please check again."),
+    "signUpPasswordMatchTitle" : MessageLookupByLibrary.simpleMessage("Password mismatch."),
+    "signUpPasswordReentryHint" : MessageLookupByLibrary.simpleMessage("Reenter Password"),
+    "signUpUnknownFailureErrorMessage" : MessageLookupByLibrary.simpleMessage("Unable to sign up now. Please try again later.")
   };
 }

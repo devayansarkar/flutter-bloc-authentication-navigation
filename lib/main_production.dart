@@ -1,11 +1,15 @@
-import 'package:bloc/bloc.dart';
+import 'package:flutter_mobile_application/app/mobile_application.dart';
+import 'package:flutter_mobile_application/common/constants/environment.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'app/app.dart';
-import 'common/bloc/simple_bloc_delegate.dart';
-import 'common/constants/env.dart';
 
-void main() {
-  BlocSupervisor.delegate = SimpleBlocDelegate();
-  runApp(App(env: EnvValue.production));
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  debugPrint = (String message, {int wrapWidth}) {};
+  runApp(
+    MobileApplication(
+      environment: EnvironmentValue.production,
+    ),
+  );
 }

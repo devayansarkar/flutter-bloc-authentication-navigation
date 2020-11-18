@@ -1,18 +1,32 @@
-# Boiler plate Flutter mobile application
+# Flutter boiler plate project 
+
+A new Flutter project.
 
 ## Features
-- BLoc
-- Internationalizaion 
+- Authentication with Firebase
+- BLoC architecture
+- Internationalization
+- Environmnetalized application
 - Navigation
-- Lottie animation
-
 
 # Running the app.
 The application is environmentalized.
 
-All the values that can be different per envionment are housed in [env.dart](lib/common/constants)
+All the values that can be different per envionment are housed in [environment.dart](lib/common/constants)
 
-Currently, there are three environments added, `development`, `staging` and `production`.
+Currently, there are three environments added, `development` and `production`.
+
+## Get Firebase configuration for iOS and Android.
+Follow this [guide](https://firebase.google.com/docs/flutter/setup?platform=ios) and get credentials for Android and iOS.
+
+- Change the package of the project from `com.flutter.mobile` to `your.package.com`
+- Change the name of the application from `flutter_mobile_application` to `your_application_name`
+- Create a Firebase project in [console](https://firebase.google.com/). 
+- Add `android` and `ios` apps
+- Replace `google-services.json` present in `/android/app/google-services.json` with the one you created
+- Replace `GoogleService-Info.plist` present in `/ios/Runner/GoogleService-Info.plist` with the one you created
+- Once replaced, build the app and the app should be able to interact with Firebase.
+
 
 ## Running the app locally 
 > Make sure everything is installed by running `flutter doctor`
@@ -29,19 +43,12 @@ You can add confugurations in the `run` section for the various evironments:
 
 ```json
 {
-    "version": "0.2.0",
     "configurations": [
         {
             "name": "Dev",
             "type": "dart",
             "request": "launch",
             "program": "lib/main_development.dart"
-        },
-        {
-            "name": "Stage",
-            "type": "dart",
-            "request": "launch",
-            "program": "lib/main_staging.dart"
         },
         {
             "name": "Prod",
@@ -63,7 +70,7 @@ You can add confugurations in the `run` section for the various evironments:
 - annotate with `json_annotations` as shown in this [example](https://github.com/dart-lang/json_serializable/tree/master/example)
 - Run `flutter pub run build_runner build`. The generated files will be placed in the same folder as the original model.
 - DO NOT EDIT the `*.g.dart` files manually. Any subsequent build will replace the manually edited files.
-
+ > You might see some errors but it can be ignored.
 # Application content
 > Default language, `en` is already added.
 
@@ -86,11 +93,6 @@ To generate content
 flutter clean
 flutter build apk --release lib/main_development.dart
 ```
-### To run a release of staging version of the app
-```bash
-flutter clean
-flutter build apk --release lib/main_staging.dart
-```
 
 ### To run a release of production version of the app
 ```bash
@@ -98,74 +100,64 @@ flutter clean
 flutter build apk --release lib/main_production.dart
 ```
 
-### Lottie animation
-The animation in the project is downloaded from [here](https://lottiefiles.com/24574-love-pride-heart).
-
-## Screenshots
-
-### iOS
-![WELCOME](/screenshots/ios/welcome.png)
-![SIGNIN](/screenshots/ios/signin.png)
-![SIGNIN_KEYBOARD_OPEN](/screenshots/ios/signin_keyboard_open.png)
-![SIGNIN_ERR](/screenshots/ios/signin_error_notification.png)
-
-### Android
-![WELCOME](/screenshots/android/welcome.png)
-![SIGNIN](/screenshots/android/signin.png)
-![SIGNIN_KEYBOARD_OPEN](/screenshots/android/signin_keyboard_open.png)
-![SIGNIN_ERR](/screenshots/android/signin_error_notification.png)
-
-
-
-## Project structure
+### Folder structure
 ```bash
 .
-├── app
-│   ├── app.dart                # Main app
-│   └── theme.dart              # App theme
-├── common
-│   ├── base
-│   ├── bloc
-│   │   └── connectivity
-│   ├── constants
-│   │   ├── env.dart            # env variables
-│   │   └── themeColors.dart    # theme colors
-│   ├── network
-│   ├── preference
-│   ├── routes
-│   │   ├── route_generator.dart # routes mapping
-│   │   └── routes.dart          # application routes
-│   ├── ui
-│   ├── utils
-│   └── widget
-├── feature                      # UI screens for the app
-│   ├── authentication
-│   │   ├── bloc
-│   │   └── repositories
-│   ├── home
-│   │   ├── bloc
-│   │   ├── models
-│   │   ├── services
-│   │   └── ui
-│   │       ├── screen
-│   │       └── widget
-│   ├── landing
-│   │   └── ui
-│   ├── signin
-│   │   ├── bloc
-│   │   ├── services
-│   │   └── ui
-│   ├── signup
-│   │   ├── bloc
-│   │   ├── services
-│   │   └── ui
-│   └── welcome
-│       └── ui
-├── generated
-│   └── intl
-├── l10n
-│   └── intl_en.arb                 # content according to language
-├── main_development.dart           # To be used for development
-├── main_production.dart            # To be used for production
-└── main_staging.dart               # To be used for staging
+├── assets
+│   └── images
+└── lib
+    ├── app
+    ├── common
+    │   ├── bloc
+    │   │   └── connectivity
+    │   ├── constants
+    │   ├── network
+    │   ├── routes
+    │   ├── styles
+    │   └── widgets
+    ├── features
+    │   ├── authentication
+    │   │   ├── bloc
+    │   │   └── repository
+    │   ├── landing
+    │   │   └── ui
+    │   ├── main
+    │   │   ├── bloc
+    │   │   ├── models
+    │   │   ├── pages
+    │   │   │   ├── account
+    │   │   │   │   ├── bloc
+    │   │   │   │   ├── repositories
+    │   │   │   │   └── ui
+    │   │   │   │       └── widgets
+    │   │   │   ├── feed
+    │   │   │   │   └── ui
+    │   │   │   ├── home
+    │   │   │   │   └── ui
+    │   │   │   └── notification
+    │   │   │       └── ui
+    │   │   ├── repositories
+    │   │   └── ui
+    │   │       └── widgets
+    │   ├── signin
+    │   │   ├── bloc
+    │   │   ├── respositories
+    │   │   └── ui
+    │   │       └── widgets
+    │   └── signup
+    │       ├── bloc
+    │       ├── respositories
+    │       └── ui
+    │           └── widgets
+    ├── generated
+    │   └── intl
+    └── l10n
 ```
+### Screenshots
+
+![Sign-in page](/screenshots/signInPage.png){:height="50%" width="50%"}
+![Sign-up page](/screenshots/signUpPage.png){:height="50%" width="50%"}
+![Sign-in failure](/screenshots/signInFailure.png){:height="50%" width="50%"}
+![Sign-up failure](/screenshots/signUpFailure.png){:height="50%" width="50%"}
+![Home page](/screenshots/signInSuccess.png){:height="50%" width="50%"}
+![sign-out page](/screenshots/signOutPage.png){:height="50%" width="50%"}

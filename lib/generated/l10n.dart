@@ -9,6 +9,8 @@ import 'intl/messages_all.dart';
 // **************************************************************************
 
 // ignore_for_file: non_constant_identifier_names, lines_longer_than_80_chars
+// ignore_for_file: join_return_with_assignment, prefer_final_in_for_each
+// ignore_for_file: avoid_redundant_argument_values
 
 class Content {
   Content();
@@ -33,171 +35,201 @@ class Content {
     return Localizations.of<Content>(context, Content);
   }
 
-  /// `Password`
-  String get passwordHint {
+  /// `Flutter mobile application`
+  String get appName {
     return Intl.message(
-      'Password',
-      name: 'passwordHint',
+      'Flutter mobile application',
+      name: 'appName',
       desc: '',
       args: [],
     );
   }
 
-  /// `Email`
-  String get emailHint {
+  /// `Sign in`
+  String get signInPageTitle {
     return Intl.message(
-      'Email',
-      name: 'emailHint',
+      'Sign in',
+      name: 'signInPageTitle',
       desc: '',
       args: [],
     );
   }
 
-  /// `Home`
-  String get home {
+  /// `Your email`
+  String get signInEmailHint {
     return Intl.message(
-      'Home',
-      name: 'home',
+      'Your email',
+      name: 'signInEmailHint',
       desc: '',
       args: [],
     );
   }
 
-  /// `Login`
-  String get loginButton {
+  /// `Your password`
+  String get signInPasswordHint {
     return Intl.message(
-      'Login',
-      name: 'loginButton',
+      'Your password',
+      name: 'signInPasswordHint',
       desc: '',
       args: [],
     );
   }
 
-  /// `Sign up`
-  String get signUpButton {
+  /// `Sign in`
+  String get signInButtonName {
     return Intl.message(
-      'Sign up',
-      name: 'signUpButton',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Sign Up`
-  String get signUp {
-    return Intl.message(
-      'Sign Up',
-      name: 'signUp',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Sign up failure`
-  String get signUpErrorTitle {
-    return Intl.message(
-      'Sign up failure',
-      name: 'signUpErrorTitle',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Sign In`
-  String get signIn {
-    return Intl.message(
-      'Sign In',
-      name: 'signIn',
+      'Sign in',
+      name: 'signInButtonName',
       desc: '',
       args: [],
     );
   }
 
   /// `Sign in failure`
-  String get signInErrorTitle {
+  String get signInFailureTitle {
     return Intl.message(
       'Sign in failure',
-      name: 'signInErrorTitle',
+      name: 'signInFailureTitle',
       desc: '',
       args: [],
     );
   }
 
-  /// `No results`
-  String get noResults {
+  /// `Unable to sign in now. Please try again later.`
+  String get signInUnknownFailureErrorMessage {
     return Intl.message(
-      'No results',
-      name: 'noResults',
+      'Unable to sign in now. Please try again later.',
+      name: 'signInUnknownFailureErrorMessage',
       desc: '',
       args: [],
     );
   }
 
-  /// `Error`
-  String get error {
+  /// `Please check your username and password and try again.`
+  String get signInKnownFailureErrorMessage {
     return Intl.message(
-      'Error',
-      name: 'error',
+      'Please check your username and password and try again.',
+      name: 'signInKnownFailureErrorMessage',
       desc: '',
       args: [],
     );
   }
 
-  /// `Please Wait...`
-  String get pleaseWait {
+  /// `If you are having issues signing in, please contact technical support team.`
+  String get signInIssueContactUs {
     return Intl.message(
-      'Please Wait...',
-      name: 'pleaseWait',
+      'If you are having issues signing in, please contact technical support team.',
+      name: 'signInIssueContactUs',
       desc: '',
       args: [],
     );
   }
 
-  /// `Ok`
-  String get ok {
+  /// `Sign up`
+  String get signUpPageTitle {
     return Intl.message(
-      'Ok',
-      name: 'ok',
+      'Sign up',
+      name: 'signUpPageTitle',
       desc: '',
       args: [],
     );
   }
 
-  /// `User Name`
-  String get userNameHint {
+  /// `Your email`
+  String get signUpEmailHint {
     return Intl.message(
-      'User Name',
-      name: 'userNameHint',
+      'Your email',
+      name: 'signUpEmailHint',
       desc: '',
       args: [],
     );
   }
 
-  /// `Already a user`
-  String get alreadyUser {
+  /// `Password`
+  String get signUpPasswordHint {
     return Intl.message(
-      'Already a user',
-      name: 'alreadyUser',
+      'Password',
+      name: 'signUpPasswordHint',
       desc: '',
       args: [],
     );
   }
 
-  /// `A new user?`
-  String get newUser {
+  /// `Reenter Password`
+  String get signUpPasswordReentryHint {
     return Intl.message(
-      'A new user?',
-      name: 'newUser',
+      'Reenter Password',
+      name: 'signUpPasswordReentryHint',
       desc: '',
       args: [],
     );
   }
 
-  /// `Successfully signed up, please Sign In`
-  String get signupSuccess {
+  /// `Sign up`
+  String get signUpButtonName {
     return Intl.message(
-      'Successfully signed up, please Sign In',
-      name: 'signupSuccess',
+      'Sign up',
+      name: 'signUpButtonName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up failure`
+  String get signUpFailureTitle {
+    return Intl.message(
+      'Sign up failure',
+      name: 'signUpFailureTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unable to sign up now. Please try again later.`
+  String get signUpUnknownFailureErrorMessage {
+    return Intl.message(
+      'Unable to sign up now. Please try again later.',
+      name: 'signUpUnknownFailureErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password mismatch.`
+  String get signUpPasswordMatchTitle {
+    return Intl.message(
+      'Password mismatch.',
+      name: 'signUpPasswordMatchTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your passwords do not match. Please check again.`
+  String get signUpPasswordMatch {
+    return Intl.message(
+      'Your passwords do not match. Please check again.',
+      name: 'signUpPasswordMatch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Do not have an account ? Sign up here.`
+  String get signUpHint {
+    return Intl.message(
+      'Do not have an account ? Sign up here.',
+      name: 'signUpHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign out`
+  String get signOutTitle {
+    return Intl.message(
+      'Sign out',
+      name: 'signOutTitle',
       desc: '',
       args: [],
     );

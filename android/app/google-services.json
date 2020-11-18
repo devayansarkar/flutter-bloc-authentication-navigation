@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "999999999",
+    "firebase_url": "https://get-your-firebase-url.com",
+    "project_id": "get-your-project-id",
+    "storage_bucket": "get-your-storage-bucket"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "get:your:mobile:sdk:app:id",
+        "android_client_info": {
+          "package_name": "com.flutter.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "get:your:client:id",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutter.mobile",
+            "certificate_hash": "get:your:certificate:hash"
+          }
+        },
+        {
+          "client_id": "get:your:client:id",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "get-your-api-key"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "get:your:client:id",
+              "client_type": 3
+            },
+            {
+              "client_id": "get:your:client:id",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutter.mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
