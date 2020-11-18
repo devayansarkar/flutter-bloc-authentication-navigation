@@ -161,3 +161,5 @@ flutter build apk --release lib/main_production.dart
 ![Sign-up failure](/screenshots/signUpFailure.png){:height="50%" width="50%"}
 ![Home page](/screenshots/signInSuccess.png){:height="50%" width="50%"}
 ![sign-out page](/screenshots/signOut.png){:height="50%" width="50%"}
+<img src="/screenshots/signOut.png" width="300" />
+
