@@ -70,6 +70,7 @@ class _SignUpFormState extends State<SignUpForm>
     _controller.dispose();
     _usernameFocusNode.dispose();
     _passwordFocusNode.dispose();
+    _passwordReentryFocusNode.dispose();
 
     super.dispose();
   }
