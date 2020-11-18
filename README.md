@@ -155,11 +155,10 @@ flutter build apk --release lib/main_production.dart
 ```
 ### Screenshots
 
-![Sign-in page](/screenshots/signInPage.png){:height="50%" width="50%"}
-![Sign-up page](/screenshots/signUpPage.png){:height="50%" width="50%"}
-![Sign-in failure](/screenshots/signInFailure.png){:height="50%" width="50%"}
-![Sign-up failure](/screenshots/signUpFailure.png){:height="50%" width="50%"}
-![Home page](/screenshots/signInSuccess.png){:height="50%" width="50%"}
-![sign-out page](/screenshots/signOut.png){:height="50%" width="50%"}
+<img src="/screenshots/signInPage.png" width="300" />
+<img src="/screenshots/signUpPage.png" width="300" />
+<img src="/screenshots/signInFailure.png" width="300" />
+<img src="/screenshots/signUpFailure.png" width="300" />
+<img src="/screenshots/signInSuccess.png" width="300" />
 <img src="/screenshots/signOut.png" width="300" />
 
