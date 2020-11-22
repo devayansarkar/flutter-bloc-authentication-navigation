@@ -20,7 +20,7 @@ class ApiClient {
     dynamic responseJson;
     try {
       final dynamic response =
-          await http.post(Uri.encodeFull(url), body: body, headers: {
+          await http.post(Uri.encodeFull("$url$path"), body: body, headers: {
         'content-type': 'application/json',
         'accept': 'application/json',
         'Authorization': 'Bearer ' + this._token
@@ -35,11 +35,13 @@ class ApiClient {
   Future<DataResponse> get(String path, {dynamic query}) async {
     dynamic responseJson;
     try {
-      final dynamic response = await http.get(Uri.encodeFull(url), headers: {
-        'content-type': 'application/json',
-        'accept': 'application/json',
-        'Authorization': 'Bearer ' + this._token
-      });
+      final dynamic response = await http.get(
+          Uri.encodeFull(query != null ? "$url$path$query" : "$url$path"),
+          headers: {
+            'content-type': 'application/json',
+            'accept': 'application/json',
+            'Authorization': 'Bearer ' + this._token
+          });
       responseJson = _convertResponse(response);
     } on SocketException {
       throw FetchDataException('No Internet connection');
